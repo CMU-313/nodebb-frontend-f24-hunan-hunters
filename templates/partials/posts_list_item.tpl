@@ -9,7 +9,7 @@
     {{{ if ./isMainPost }}} <i class="fa fa-book text-muted" title="[[topic:topic]] I'm an iadminhahahah"></i> {{{ end }}} {./topic.title} 
     </a-->  
     <a class="topic-title fw-semibold fs-5 mb-2 text-reset text-break d-block"
-    style="{{{ if user.isAdmin }}}color: #007bff;{{{ end }}}" 
+    style="{{{ if user.isAdmin }}}color: #FFC0CB;{{{ end }}}" 
     href="{config.relative_path}/post/{./pid}">
     {{{ if ./isMainPost }}} 
         <i class="fa fa-book text-muted" title="[[topic:topic]] I'm an admin!"></i> 
