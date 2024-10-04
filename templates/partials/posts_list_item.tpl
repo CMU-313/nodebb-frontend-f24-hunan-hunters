@@ -5,9 +5,17 @@
     {{{ if ./isMainPost }}}<i class="fa fa-book text-muted" title="[[topic:topic]]"></i> {{{ end }}}{./topic.title}
     </a --> 
 
-    <a class="topic-title fw-semibold fs-5 mb-2 text-reset text-break d-block style = {{{ if user.isAdmin }}} color: #007bff;  {{{ end }}}" href="{config.relative_path}/post/{./pid}">
+    <!--a class="topic-title fw-semibold fs-5 mb-2 text-reset text-break d-block style = {{{ if user.isAdmin }}} color: #007bff;  {{{ end }}}" href="{config.relative_path}/post/{./pid}">
     {{{ if ./isMainPost }}} <i class="fa fa-book text-muted" title="[[topic:topic]] I'm an iadminhahahah"></i> {{{ end }}} {./topic.title} 
-    </a>  
+    </a-->  
+    <a class="topic-title fw-semibold fs-5 mb-2 text-reset text-break d-block"
+    style="{{{ if user.isAdmin }}}color: #007bff;{{{ end }}}" 
+    href="{config.relative_path}/post/{./pid}">
+    {{{ if ./isMainPost }}} 
+        <i class="fa fa-book text-muted" title="[[topic:topic]] I'm an admin!"></i> 
+    {{{ end }}}
+    {./topic.title}
+    </a>
 
     <div class="post-body d-flex flex-column gap-1">
         <div class="d-flex gap-3 post-info text-sm align-items-center">
