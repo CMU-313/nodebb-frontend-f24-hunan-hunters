@@ -6,7 +6,7 @@
     </a --> 
 
     <a class="topic-title fw-semibold fs-5 mb-2 text-reset text-break d-block style = {{{ if user.isAdmin }}} color: #007bff;  {{{ end }}}" href="{config.relative_path}/post/{./pid}">
-    {{{ if ./isMainPost }}} <i class="fa fa-book text-muted" title="[[topic:topic]]"></i> {{{ end }}} {./topic.title}
+    {{{ if ./isMainPost }}} <i class="fa fa-book text-muted" title="[[topic:topic]]"></i> {{{ end }}} {./topic.title} I'm an iadminhahahah
     </a>  
 
     <div class="post-body d-flex flex-column gap-1">
