@@ -22,6 +22,11 @@
 			<span title="{totalPostCount}" class="fw-bold">{humanReadableNumber(totalPostCount)}</span>
 			<span class="text-lowercase fw-normal">[[global:posts]]</span>
 		</span>
+		<!-- New Pinned tab -->
+		<span class="badge text-body border border-gray-300 stats text-xs">
+			<span title="{totalPinnedCount}" class="fw-bold">{humanReadableNumber(totalPinnedCount)}</span>
+			<span class="text-lowercase fw-normal">[[global:pinned]]</span>
+		</span>
 	</div>
 </div>
 
