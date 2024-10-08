@@ -61,6 +61,7 @@
 
 		<div class="content mt-2 text-break" component="post/content" itemprop="text">
 			{posts.content}
+			<p>Random text added to the post to test frontend changes!</p>
 		</div>
 	</div>
 </div>
