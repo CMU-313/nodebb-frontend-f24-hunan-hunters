@@ -67,7 +67,7 @@
 		<div class="content mt-2 text-break" component="post/content" itemprop="text">
 			{posts.content}
 
-			<!-- ONLY FOR TESTING IF FRONTEND LINKS TO BACKEND DELETE LATER -->
+			<!-- ONLY FOR TESTING IF FRONTEND LINKS TO BACKEND, DELETE LATER -->
 			{{{ if posts.user.isInstructor }}}
 			<p>This text appears if this post was made by an instructor!</p>
 			{{{ end }}}

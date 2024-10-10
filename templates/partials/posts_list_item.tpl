@@ -6,7 +6,7 @@
     </a --> 
 
     <a class="topic-title fw-semibold fs-5 mb-2 text-reset text-break d-block style = {{{ if user.isAdmin }}} color: #007bff;  {{{ end }}}" href="{config.relative_path}/post/{./pid}">
-    {{{ if ./isMainPost }}} <i class="fa fa-book text-muted" title="[[topic:topic]]"></i> {{{ end }}} {./topic.title} I'm an iadminhahahah
+    {{{ if ./isMainPost }}} <i class="fa fa-book text-muted" title="[[topic:topic]]"></i> {{{ end }}} {./topic.title}
     </a>  
 
     <div class="post-body d-flex flex-column gap-1">
@@ -14,11 +14,14 @@
             <div class="post-author d-flex align-items-center gap-1">
                 <a class="lh-1 text-decoration-none" href="{config.relative_path}/user/{./user.userslug}">{buildAvatar(./user, "16px", true, "not-responsive")}</a>
                 <a class="lh-1 fw-semibold" href="{config.relative_path}/user/{./user.userslug}">{../user.displayname}</a>
+                <a> TESTING CODE </a>
             </div>
             <span class="timeago text-muted lh-1" title="{./timestampISO}"></span>
+            <a> TESTING CODE </a>
         </div>
 
         <div component="post/content" class="content text-sm text-break">
+            <a> TESTING CODE </a>
             {./content}
         </div>
     </div>
