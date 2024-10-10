@@ -9,11 +9,9 @@
 
 <ul component="posts" class="posts-list list-unstyled" data-nextstart="{nextStart}"></ul>
 	{{{ each posts }}}
-	{{{ if account.isAdmin }}}
-		<!-- IMPORT partials/instructor_post_list_item.tpl -->
-	{{{ else }}}
+
 		<!-- IMPORT partials/instructor_posts_list_item.tpl -->
-	{{{ end }}}
+
 	{{{ end }}}
 </ul>
 <div component="posts/loading" class="loading-indicator text-center hidden">
