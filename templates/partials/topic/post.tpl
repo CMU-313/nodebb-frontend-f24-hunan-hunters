@@ -17,6 +17,7 @@
 			<meta itemprop="name" content="{./user.username}">
 			{{{ if ./user.userslug }}}<meta itemprop="url" content="{config.relative_path}/user/{./user.userslug}">{{{ end }}}
 
+			<!-- WRAP THIS WITH AN IF STATEMENT SO THAT IT ONLY SHOWS FOR INSTRUCTORS -->
 			<span class="text-danger" title="Instructor">
 				<i class="fa fa-exclamation-circle"></i> Instructor
 			</span>
@@ -64,8 +65,10 @@
 		</div>
 
 		<div class="content mt-2 text-break" component="post/content" itemprop="text">
-			{{{ if posts.user.isInstructor }}}
 			{posts.content}
+
+			<!-- ONLY FOR TESTING IF FRONTEND LINKS TO BACKEND, DELETE LATER -->
+			{{{ if posts.user.isInstructor }}}
 			<p>This text appears if this post was made by an instructor!</p>
 			{{{ end }}}
 		</div>
