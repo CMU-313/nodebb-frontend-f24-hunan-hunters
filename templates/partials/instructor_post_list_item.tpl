@@ -16,7 +16,8 @@
         </div>
 
         <div component="post/content" class="content text-sm text-break">
-            {./content} I"M AN ISNTRUCTUIEHRIUHEUI
+            {./content}  
+            <p> This is some random text added to the post! </p> 
 
         </div>
     </div>

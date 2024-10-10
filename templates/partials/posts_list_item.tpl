@@ -5,7 +5,6 @@
     {{{ if ./isMainPost }}}<i class="fa fa-book text-muted" title="[[topic:topic]]"></i> {{{ end }}}{./topic.title}
     </a>
 
-
     <div class="post-body d-flex flex-column gap-1">
         <div class="d-flex gap-3 post-info text-sm align-items-center">
             <div class="post-author d-flex align-items-center gap-1">
