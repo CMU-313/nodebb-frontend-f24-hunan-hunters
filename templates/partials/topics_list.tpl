@@ -1,7 +1,7 @@
 <ul component="category" class="topics-list list-unstyled" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}" data-set="{set}">
 
 	{{{ each topics }}}
-	<li component="category/topic" style="background-color: {{{ if privileges.isAdminOrMod }}}#fff2ef{{{ else }}}transparent{{{ end }}};" class="category-item hover-parent border-bottom py-3 py-lg-4 d-flex flex-column flex-lg-row align-items-start {function.generateTopicClass}" <!-- IMPORT partials/data/category.tpl --> >
+	<li component="category/topic" style="background-color: {{{ if privileges.isAdminOrMod }}}#efefef{{{ else }}}transparent{{{ end }}};" class="category-item hover-parent border-bottom py-3 py-lg-4 d-flex flex-column flex-lg-row align-items-start {function.generateTopicClass}" <!-- IMPORT partials/data/category.tpl --> >
 		<link itemprop="url" content="{config.relative_path}/topic/{./slug}" />
 		<meta itemprop="name" content="{function.stripTags, ./title}" />
 		<meta itemprop="itemListOrder" content="descending" />
@@ -22,7 +22,7 @@
 			<div class="flex-grow-1 d-flex flex-wrap gap-1 position-relative">
 				<h3 component="topic/header" class="title text-break fs-5 fw-semibold m-0 tracking-tight w-100 {{{ if showSelect }}}me-4 me-lg-0{{{ end }}}">
 					<a class="text-reset" href="{{{ if topics.noAnchor }}}#{{{ else }}}{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}{{{ end }}}">{./title}
-						<p>{{{ if privileges.isAdminOrMod }}}(Instructor Post){{{ else }}}(Not Instructor Post){{{ end }}}</p> </a>
+						<p>{{{ if privileges.isAdminOrMod }}}(Instructor Post){{{ else }}}{{{ end }}}</p> </a>
 				</h3>
 				<span component="topic/labels" class="d-flex flex-wrap gap-1 w-100">
 					<span component="topic/watched" class="badge border border-gray-300 text-body {{{ if !./followed }}}hidden{{{ end }}}">
