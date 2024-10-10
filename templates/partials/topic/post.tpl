@@ -72,6 +72,7 @@
 			<p>This text appears if this post was made by an instructor!</p>
 			{{{ end }}}
 		</div>
+
 	</div>
 </div>
 
