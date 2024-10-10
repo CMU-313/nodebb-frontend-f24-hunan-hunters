@@ -1,3 +1,5 @@
+Team Members: Andrew Cheng, Emily Yu, Tin Chi Lo, Joyce Lam, Jorge Gracia
+
 Harmony theme for NodeBB
 ====================
 

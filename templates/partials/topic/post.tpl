@@ -17,6 +17,10 @@
 			<meta itemprop="name" content="{./user.username}">
 			{{{ if ./user.userslug }}}<meta itemprop="url" content="{config.relative_path}/user/{./user.userslug}">{{{ end }}}
 
+			<span class="text-danger" title="Instructor">
+				<i class="fa fa-exclamation-circle"></i> Instructor
+			</span>
+
 			<div class="bg-body d-sm-none">
 				<a class="d-inline-block position-relative text-decoration-none" href="{{{ if ./user.userslug }}}{config.relative_path}/user/{./user.userslug}{{{ else }}}#{{{ end }}}">
 					{buildAvatar(posts.user, "20px", true, "", "user/picture")}
@@ -60,7 +64,10 @@
 		</div>
 
 		<div class="content mt-2 text-break" component="post/content" itemprop="text">
+			{{{ if posts.user.isInstructor }}}
 			{posts.content}
+			<p>This text appears if this post was made by an instructor!</p>
+			{{{ end }}}
 		</div>
 
 	</div>
